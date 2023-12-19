@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>冷板产品展示</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      height: 15vh;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Product styles */
+    .product-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 30%;
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      margin-bottom: 20px;
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #009688;
+      font-weight: bold;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      height: 15vh;
+    }
+
+    .footer-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-size: 14px;
+    }
+
+    /* Media Queries for Responsive Design */
+
+    @media screen and (max-width: 1200px) {
+      .product {
+        width: 45%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .product {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">冷板销售公司</div>
+    <div class="tagline">为你提供高品质的冷板销售服务</div>
+  </header>
+
+  <div class="product-container">
+    <div class="product">
+      <img src="image/productA.jpg" alt="冷板产品1" class="product-image">
+      <div class="product-title">优质冷板产品A</div>
+      <p class="product-description">经过严格质量控制的冷板产品，适用于各种运输需求。</p>
+      <div class="product-price">价格：¥面议</div>
+    </div>
+
+    <div class="product">
+      <img src="image/productB.jpg" alt="冷板产品2" class="product-image">
+      <div class="product-title">优质冷板产品B</div>
+      <p class="product-description">高性能冷板产品，确保货物在最佳状态下运输。</p>
+      <div class="product-price">价格：¥面议</div>
+    </div>
+
+    <div class="product">
+      <img src="image/productC.jpg" alt="冷板产品3" class="product-image">
+      <div class="product-title">优质冷板产品C</div>
+      <p class="product-description">专为特殊运输需求设计的冷板产品，可定制配置。</p>
+      <div class="product-price">价格：¥面议</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">冷板销售公司</div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="#">产品</a>
+      <a href="#">关于我们</a>
+      <a href="#">联系我们</a>
+    </div>
+    <div class="copyright">版权所有 © 2023 冷板销售公司</div>
+  </footer>
+
+</body>
+</html>
