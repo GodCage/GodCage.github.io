@@ -1,91 +1,225 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>产品展示</title>
+  <title>冷板销售公司官方网站</title>
   <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
     body {
       background-color: #f2f2f2;
       font-family: Arial, sans-serif;
+      line-height: 1.6;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
       padding: 20px;
     }
 
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-
-    .product {
-      display: flex;
-      align-items: center;
-      margin-bottom: 40px;
-    }
-
-    .product-image {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-
-    .product-image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .product-details {
-      flex: 0 0 50%;
-      max-width: 50%;
-      padding-left: 20px;
-    }
-
-    .product-title {
-      font-size: 24px;
-      color: #333;
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
       margin-bottom: 10px;
     }
 
-    .product-description {
-      color: #666;
-      margin-bottom: 10px;
-    }
-
-    .product-price {
+    .tagline {
       font-size: 18px;
-      color: #333;
+      margin-bottom: 10px;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    /* Hero section styles */
+    .hero {
+      background-image: url('hero.jpg');
+      background-position: center center;
+      background-size: cover;
+      height: 500px;
+      position: relative;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .hero-content {
+      color: #fff;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Features section styles */
+    .features {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .feature {
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: top;
+      width: 30%;
+    }
+
+    .feature:last-child {
+      margin-right: 0;
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .feature-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .feature-description {
+      color: #666;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      margin-right: 20px;
+    }
+
+    .footer-links a:last-child {
+      margin-right: 0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>产品展示</h1>
+  <header>
+    <div class="logo">冷板销售公司</div>
+    <div class="tagline">为你提供高品质的冷板销售服务</div>
+  </header>
 
-    <div class="product">
-      <div class="product-image">
-        <img src="product1.jpg" alt="产品1">
-      </div>
-      <div class="product-details">
-        <h2 class="product-title">产品标题1</h2>
-        <p class="product-description">这是产品1的描述。</p>
-        <p class="product-price">$29.99</p>
-      </div>
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">产品</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">联系我们</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">高品质的冷板销售</h1>
+      <p class="hero-subtitle">我们提供优质的冷板销售服务，让您的业务更上一层楼。</p>
+      <a href="#" class="button">了解更多</a>
     </div>
-
-    <div class="product">
-      <div class="product-image">
-        <img src="product2.jpg" alt="产品2">
-      </div>
-      <div class="product-details">
-        <h2 class="product-title">产品标题2</h2>
-        <p class="product-description">这是产品2的描述。</p>
-        <p class="product-price">$39.99</p>
-      </div>
-    </div>
-
-    <!-- 添加更多产品项 -->
-
   </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">👍</div>
+      <div class="feature-title">高品质产品</div>
+      <div class="feature-description">我们的产品经过严格的质量控制，保证高品质。</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">💰</div>
+      <div class="feature-title">合理的价格</div>
+      <div class="feature-description">我们的价格合理且公正，让您用最少的资金获得最大的效益。</div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon">🚚</div>
+      <div class="feature-title">快速的交付</div>
+      <div class="feature-description">我们为您提供快速的交付服务，让您的业务不再受时间的限制。</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">冷板销售公司</div>
+    <div class="footer-links">
+      <a href="#">首页</a>
+      <a href="#">产品</a>
+      <a href="#">关于我们</a>
+      <a href="#">联系我们</a>
+    </div>
+    <div>版权所有 © 2023 冷板销售公司</div>
+  </footer>
 </body>
 </html>
